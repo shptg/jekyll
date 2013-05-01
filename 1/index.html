@@ -1,0 +1,12 @@
+---
+layout:default
+title: my blog
+---
+<h2>{{page.title}}</h2>
+<p>new archive hello my roll </p>
+<ul>
+	{% for post in sit.posts %}
+		<li>{{post.date | date_to_string}} <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
+		{% endfor %}
+
+</ul>
